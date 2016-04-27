@@ -21,6 +21,7 @@ get '/drive' do
 	@description = "Oh no! Your car breaks down, you have to walk now."
 	erb :drive
 end
+<<<<<<< HEAD
 
 get '/bus' do 
 	@description = "You arrive at the station before catching your ride and the CTA has shut down."
@@ -41,3 +42,13 @@ end
 <p> <%= @bus %> <p>
 
 <a href=<%= "/di"
+=======
+<<<<<<< HEAD
+
+get '/walk' do
+	@description = "You start walking and it starts to rain do you.....?"
+	erb :walk
+end
+=======
+>>>>>>> 69c490e8869d01c061575fa941d2d1b91492e628
+>>>>>>> 04e2b20ce84ff0206333632864126a94cdaf2509
