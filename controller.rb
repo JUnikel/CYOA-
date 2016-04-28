@@ -20,6 +20,9 @@ end
 
 get '/drive' do
 	@description = "Oh no! Your car breaks down, you have to walk now."
+	@option_a = "Take Train"
+	@option_b = "Take Bus"
+	@option_c = "Stay Home"
 	erb :everything
 end
 
@@ -39,10 +42,6 @@ get '/train' do
 end 
 
 
-
-<p> <%= @bus %> <p>
-
-<a href=<%= "/di"
 
 
 get '/walk' do

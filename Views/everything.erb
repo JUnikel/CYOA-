@@ -1,4 +1,4 @@
-Starting Page
+<%#Starting Page%>
 <p> <%= @description %> </p>
 <% if @option_a %>
 	<a href="/dontgo"> Don't go to school at all</a>
@@ -12,18 +12,13 @@ Starting Page
 	<a href = "/walk"> Walk </a>
 <% end %>
 
-
-
-
-
-
-
-Drive:
+<%#Drive:%>
 <p> <%= @description %> </p>
-
-
-<a href = "/Take_train"> Run so you don't miss the next stop! </a>
-<a href = "/Take_bus"> Next bus comes in 5 minutes, hurry up!  </a>
+<% if @option_a %>
+	<a href = "/Take_train"> Run so you don't miss the next stop! </a>
+<% elsif @option_b %>
+	<a href = "/Take_bus"> Next bus comes in 5 minutes, hurry up!  </a>
+<% elsif @option_c
 <a href = "/Stay_home"> Enjoy your day of hookey </a>
 
 
