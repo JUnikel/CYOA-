@@ -10,31 +10,32 @@ get '/startingpage' do
 	option_b = "Drive"
 	option_c = "Train"
 	option_d = "Bus"
-	erb :startingpage
+	option_e = "Walk"
+	erb :everything
 end
 
 get '/dontgo' do
-	erb :dontgo
+	erb :everything
 end
 
 get '/drive' do
 	@description = "Oh no! Your car breaks down, you have to walk now."
-	erb :drive
+	erb :everything
 end
-<<<<<<< HEAD
+
 
 get '/bus' do 
 	@description = "You arrive at the station before catching your ride and the CTA has shut down."
 	@option_a = "Go home"
 	@option_b = "Wait it out"
-	erb :bus 
+	erb :everything 
 end 
 
 get '/train' do 
 	@description = "You arrive at the station before catching your ride and the CTA has shut down." 
 	@option_a = "Go home"
 	@option_b = "Wait it out"
-	erb :train
+	erb :everything
 end 
 
 
@@ -42,13 +43,10 @@ end
 <p> <%= @bus %> <p>
 
 <a href=<%= "/di"
-=======
-<<<<<<< HEAD
+
 
 get '/walk' do
 	@description = "You start walking and it starts to rain do you.....?"
-	erb :walk
+	erb :everything
 end
-=======
->>>>>>> 69c490e8869d01c061575fa941d2d1b91492e628
->>>>>>> 04e2b20ce84ff0206333632864126a94cdaf2509
+
