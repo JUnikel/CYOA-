@@ -1,3 +1,23 @@
+Starting Page
+<p> <%= @description %> </p>
+<% if @option_a %>
+	<a href="/dontgo"> Don't go to school at all</a>
+<% elsif @option_b %>
+	<a href="/drive">  Drive </a>
+<% elsif @option_c %> 
+	<a href="/train">  Train </a>
+<%elsif @option_d %>
+	<a href = "/bus"> Bus </a>
+<%elsif @option_e %>
+	<a href = "/walk"> Walk </a>
+<% end %>
+
+
+
+
+
+
+
 Drive:
 <p> <%= @description %> </p>
 
@@ -27,17 +47,6 @@ Index
 
 <a href="/startingpage"> Start </a>
 
-
-Starting Page
-<p> <%= @description %> </p>
-
-<a href="/dontgo"> Don't go to school at all</a>
-
-<a href="/drive"> 
-	  Drive </a>
-
-<a href = "/walk">
-	Walk </a>
 
 
 Train
